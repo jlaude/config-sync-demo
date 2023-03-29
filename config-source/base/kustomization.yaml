@@ -20,4 +20,7 @@ bases:
 resources:
 - pod-creator-clusterrole.yaml
 - pod-creator-rolebinding.yaml
+- helloweb-deployment.yaml
+- helloweb-hpa.yaml
+- helloweb-service-load-balancer.yaml
 # [END anthosconfig_multi_environments_kustomize_config_source_base_kustomization] 

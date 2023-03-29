@@ -18,7 +18,4 @@ kind: Kustomization
 resources:
 - namespace.yaml
 - serviceaccount.yaml
-- helloweb-deployment.yaml
-- helloweb-hpa.yaml
-- helloweb-service-load-balancer.yaml
 # [END anthosconfig_multi_environments_kustomize_config_source_base_foo_kustomization] 

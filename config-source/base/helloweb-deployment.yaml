@@ -41,6 +41,9 @@ spec:
         resources:
           requests:
             cpu: 200m
+        env:
+          - name: PORT
+            value: "8080"
 # [END container_helloapp_deployment]
 # [END gke_manifests_helloweb_deployment_deployment_helloweb]
 ---

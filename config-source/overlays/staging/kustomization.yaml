@@ -25,7 +25,7 @@ patches:
   patch: |-
     - op: replace
       path: /metadata/name
-      value: foo-ksa-dev
+      value: foo-ksa-staging
 # Pod creators - give all FooCorp developers access 
 - target:
     kind: RoleBinding
@@ -35,5 +35,5 @@ patches:
       path: /subjects/0/name
       value: developers-all@foo-corp.com
 commonLabels:
-  environment: dev
-# [END anthosconfig_multi_environments_kustomize_config_source_overlays_dev_kustomization] 
+  environment: staging
+    # [END anthosconfig_multi_environments_kustomize_config_source_overlays_dev_kustomization] 

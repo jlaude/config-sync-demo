@@ -1,14 +1,16 @@
 {
     "configurations": [
         {
-            "name": "Kubernetes: Run/Debug - staging",
+            "name": "Kubernetes: Run/Debug - dev",
             "type": "cloudcode.kubernetes",
             "request": "launch",
             "skaffoldConfig": "${workspaceFolder}/skaffold.yaml",
-            "profile": "staging",
+            "profile": "dev",
             "watch": true,
             "cleanUp": true,
-            "portForward": true
+            "portForward": true,
+            "internalConsoleOptions": "neverOpen",
+            "imageRegistry": "gcr.io/dev-demo-project-366116"
         }
     ]
 }

@@ -1,10 +1,11 @@
+
 # Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+#      http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,15 +13,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START anthosconfig_multi_environments_kustomize_config_source_base_foo_kustomization] 
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- namespace.yaml
-- serviceaccount.yaml
-- helloweb-deployment.yaml
-- helloweb-hpa.yaml
-- helloweb-ingress-static-ip.yaml
-- helloweb-service-load-balancer.yaml
-- helloweb-service-static-ip.yaml
-# [END anthosconfig_multi_environments_kustomize_config_source_base_foo_kustomization] 
+# [START gke_manifests_helloweb_service_load_balancer_service_helloweb]
+# [START container_helloapp_service_load_balancer]
+apiVersion: v1
+kind: Service
+metadata:
+  name: helloweb
+  labels:
+    app: hello
+    tier: web
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: hello
+    tier: web
+# [END container_helloapp_service_load_balancer]
+# [END gke_manifests_helloweb_service_load_balancer_service_helloweb]
+---

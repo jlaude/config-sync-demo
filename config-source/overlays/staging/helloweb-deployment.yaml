@@ -7,5 +7,5 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: us-central1-docker.pkg.dev/dev-demo-project-366116/hello-repo/helloworld-gke:ecee335520f421dfaf57a4da60672f9e2682e15855f8412be9d2adbaed3099a1@sha256:10b58acaeea049449e2edce574ee5375f9eeff8835fba2b732d2abdf259c72a0
+        image: us-central1-docker.pkg.dev/dev-demo-project-366116/hello-repo/helloworld-gke:b79d104f1ca97d0fdc1c68009c350cad407b9954c2ff14d88594988608273c87
         

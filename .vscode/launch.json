@@ -10,7 +10,7 @@
             "cleanUp": true,
             "portForward": true,
             "internalConsoleOptions": "neverOpen",
-            "imageRegistry": "gcr.io/dev-demo-project-366116"
+            "imageRegistry": "us-central1-docker.pkg.dev/dev-demo-project-366116/hello-repo"
         }
     ]
 }

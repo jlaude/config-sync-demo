@@ -8,6 +8,7 @@ build:
   local:
     tryImportMissing: true
     push: true
+
   tagPolicy:
     inputDigest: {}
   # defines where to find the code at build time and where to push the resulting image
